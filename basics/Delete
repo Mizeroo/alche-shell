@@ -1,0 +1,11 @@
+s in /tmp/my_first_directory
+Example:
+
+$ ./8-firstdelete
+$ ls /tmp/my_first_directory/
+$
+Repo:
+
+GitHub repository: alche-shell
+Directory: basics
+File: 8-firstdelete
