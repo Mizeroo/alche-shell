@@ -1,14 +1,18 @@
 #!/bin/bash
 
-read -p "Enter the filename: " file name
+echo "Enter the filename:"
+read filename
 
-read -p "Enter the command: " cmd
+echo "Enter the command:"
+read command
 
-echo -e "!/bin/bash\n$cmd" > "$filename"
+echo "#!/bin/bash" > "$filename"
+echo "$command" >> "$filename"
 
-chmod u+x "$filename"
+chmod +x "$filename"
 
-git add .
-git commit -m "modified $filename"
+git add "$filename"
+git commit -m "created $filename"
+git push
 
-echo "successfully created $filename and pushed to git!"
+echo "Successfully created $filename and pushed to git!"
