@@ -2,7 +2,7 @@
 
 read -p "Enter the filename: " file name
 
-ead -p "Enter the command: " cmd
+read -p "Enter the command: " cmd
 
 echo -e "!/bin/bash\n$cmd" > "$filename"
 
