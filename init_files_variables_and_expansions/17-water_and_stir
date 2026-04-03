@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%xn" $((5#$(echo "$WATER" | tr 'water' '01234') + 4#$(echo "$STIR" | tr 'stir.' '0123'))) | tr '0123456789abcdef' 'shtbeolhc'
+echo "$WATER $STIR" | tr 'waterstir.' '0123456789' | tr -d ' ' | tr '0123456789abcdef' 'shtbeolhc'
