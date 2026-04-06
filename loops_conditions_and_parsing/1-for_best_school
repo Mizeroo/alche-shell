@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# use of for loop
+
 fot i in [1..10]
 
 do
