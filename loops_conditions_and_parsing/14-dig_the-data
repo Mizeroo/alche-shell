@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-# This script groups visitors by IP and HTTP status code and counting
+# parses an Apache log file and displays the IP and HTTP code for each visitor, along with the number of occurences.
 
-awk 'NF >= 9 && $1 ~ /^[0-9.]+$/ && $9 ~ /^[0-9]{3}$/ {print $1, $9}' "$1" \
-| sort \
-| uniq -c \
-| sort -k1,1nr -k2,2r -k3,3r
+awk '{print $1,$9}' apache-access.log | sort | uniq -c | sort -nr
