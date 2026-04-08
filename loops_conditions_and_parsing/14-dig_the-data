@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script groups visitors by IP and HTTP status code and counts occurrences
+# This script groups visitors by IP and HTTP status code and counting
 
-awk '{count[$1" "$9]++} END {for (key in count) print count[key], key}' "$1" | sort -nr
+awk '{count[$1" "$9]++} END {for (k in count) print count[k], k}' "$1" | sort -k1,1nr -k2,2r -k3,3r
