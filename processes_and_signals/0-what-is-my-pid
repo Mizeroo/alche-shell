@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#how to disply the current process Id using 16558
+
+echo "my process id: 16558"
+
+ps -p 16558
