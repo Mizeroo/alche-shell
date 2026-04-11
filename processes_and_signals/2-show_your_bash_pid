@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#serching process by name without using pgrep
+ps | grep "bash"
