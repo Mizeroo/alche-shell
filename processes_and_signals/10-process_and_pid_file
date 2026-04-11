@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#terminte script its self
 echo $$ > /var/run/myscript.pid
 
 trap 'echo "I hate the kill command"' SIGTERM
