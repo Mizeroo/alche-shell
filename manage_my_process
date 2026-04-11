@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#use of case and init.d directories
+while true; do
+	echo "I am alive !" > /tmp/my_proces
+	sleep 2
+done

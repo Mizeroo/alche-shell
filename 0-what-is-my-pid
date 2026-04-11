@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-#how to disply the current process Id using $$
-
-echo "my process id: $$"
-
-ps -p $$
-
