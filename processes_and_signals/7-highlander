@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#using trap to stop SIGTERM effect
 trap 'echo "I am invincible!!!"' SIGTERM
 while true; do
     echo "To infinity and beyond"
